@@ -1,0 +1,114 @@
+﻿.ui-tooltip, .arrow:after {
+	background: transparent;
+	border: none!important;
+	max-width: 500px;
+	width: 500px;
+	height: 307px;
+}
+
+.ui-widget-shadow {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.ui-corner-all {
+	border-radius: 0;
+}
+
+.ui-widget {
+	font-size: 1rem;
+}
+
+.wlpTooltip {
+	display:none;
+		position:fixed;
+	background: transparent;
+	max-width: 500px;
+	width: 500px;
+	height: 307px;
+	
+}
+ .tank{width:500px;
+	   height:307px;
+	   position:relative;
+	   display:block;
+	   background: rgba(149,149,149,0.85);
+ }
+.tank::before, .tank::after {
+	content: '';
+	position: absolute;
+	left: 45px;
+	top: -61px;
+	width:0;
+	height:0;
+	border:26px solid transparent;
+	border-bottom:36px solid rgba(149,149,149,0.85);
+	z-index:-1;
+}
+
+.tank1 {
+	background: url("../../images/experienceTank/tooltipBackground-topLeft.png") no-repeat;
+	padding-top: 37px;
+}
+
+.tank2 {
+	background: url("../../images/experienceTank/tooltipBackground-topCenter.png") no-repeat;
+	padding-top: 37px;
+}
+
+.tank3 {
+	background: url("../../images/experienceTank/tooltipBackground-topRight.png") no-repeat;
+	padding-top: 37px;
+}
+
+.tank4 {
+	background: url("../../images/experienceTank/tooltipBackground-bottomLeft.png") no-repeat;
+	  padding-top:37px;
+}
+
+.tank5 { background: url("../../images/experienceTank/tooltipBackground-bottomCenter.png") no-repeat;
+	  padding-top:37px;
+}
+
+.tank6 {
+	background: url("../../images/experienceTank/tooltipBackground-bottomRight.png") no-repeat;
+	  padding-top:37px;
+}
+
+
+.arrow {
+	width: 70px;
+	height: 16px;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: -35px;
+	bottom: -16px;
+}
+
+	.arrow.top {
+		top: -16px;
+		bottom: auto;
+	}
+
+	.arrow.left {
+		left: 20%;
+	}
+
+	.arrow:after {
+		content: "";
+		position: absolute;
+		left: 20px;
+		top: -20px;
+		width: 25px;
+		height: 25px;
+		box-shadow: 6px 5px 9px -9px black;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+	.arrow.top:after {
+		bottom: -20px;
+		top: auto;
+	}

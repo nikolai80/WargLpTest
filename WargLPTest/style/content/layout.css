@@ -1,0 +1,20 @@
+﻿body {
+	background: rgb(28,28,30) url("../../images/Landging.png") no-repeat;
+}
+
+.content {
+}
+
+.mainContent {
+	color: rgb(255,255,255);
+	margin-top: 282px;
+}
+
+.footer {
+	height: 83px;
+	background: rgb(57,61,63) url("../../images/footer.png");
+}
+.mainContent-header{margin-bottom:40px;
+					font-size:35px;
+}
+.mainContent-text{line-height:18px;}

@@ -1,0 +1,27 @@
+﻿.mainContent-vidget-tank {
+	/*background: url("/images/experienceTank/tank.png") no-repeat 50% 100%;*/
+	width: 196px;
+	height: 291px;
+	overflow: hidden;
+	margin: 5px 0 0 11px;
+	/*background-size: 160%;*/
+}
+
+.mainContent-vidget-tank-imgWrap {
+	max-height: 170px;
+	max-width: 225px;
+	overflow: hidden;
+	margin-bottom:20px;
+}
+
+.mainContent-vidget-tank img {
+	margin-left: -79px;
+	margin-top: -28px;
+	width: 351px;
+}
+
+.mainContent-vidget-tank p {
+	font-family:Arial;
+	font-size: 21px;
+	color: rgb(185,185,185);
+}

@@ -1,0 +1,8 @@
+﻿.headerNav{background-color:rgba(37,37,38,0.7);
+		   height:66px;
+           color:white;
+}
+.headerNav .nav-link {color:rgb(170,170,171);
+              font-size: 20px;
+              font-family:"Roboto Bold";
+}

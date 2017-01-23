@@ -1,0 +1,51 @@
+﻿.tank-battleCount-header, .tank-equipment-header, .tank-experience-header {
+    font-family: Arial;
+    font-size: 21px;
+    color: rgb(162,155,112);
+}
+
+.tank-battleCount-sliderWrap {
+    background: url("../../images/experienceTank/sliderBg.png") no-repeat;
+    height: 42px;
+    width: 262px;
+}
+
+.tank-battleCount-slider.ui-widget.ui-widget-content {
+    border: none;
+    margin-left: 20px;
+    margin-right: 25px;
+    top: 20px;
+    background: transparent;
+}
+
+    .tank-battleCount-slider.ui-widget.ui-widget-content .ui-slider {
+        border: none;
+    }
+
+.ui-slider .ui-slider-handle {
+    background: url("../../images/experienceTank/sliderTogle.png");
+    width: 34px;
+    height: 34px;
+    border: none;
+    top: -15px;
+}
+
+.ui-slider-horizontal {
+    height: 3px;
+}
+    /*.ui-slider-horizontal .ui-slider-range-min { left: 20px; }*/
+
+    .ui-slider-horizontal .ui-slider-range {
+        height: 3px;
+        background: rgb(255,189,1);
+    }
+
+.tank-experience-calcWraper img {
+    width: 61px;
+    height: 43px;
+}
+
+.tank-experience-value {
+    color: rgb(249,169,54);
+    font-size: 30px;
+}

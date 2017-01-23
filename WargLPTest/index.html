@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script language="JavaScript" type="text/javascript" src="scripts/jquery-3.1.1.js"></script>
+    <script src="scripts/jqueryUi/jquery-ui.js"></script>
+    <script src="scripts/ionRangeSlider/ion.rangeSlider.js"></script>
+    <script src="scripts/jsRender/jsrender.js"></script>
+    <script language="JavaScript" type="text/javascript" src="scripts/bootstrap.js"></script>
+    <meta charset=utf-8>
+    <title>Wargaming test work</title>
+    <link rel="stylesheet" href="style/bootstrap/bootstrap.css">
+
+    <link href="style/jqueryui/jquery-ui.css" rel="stylesheet" />
+    <link href="style/ionRangeSlider/normalize.css" rel="stylesheet" />
+    <link href="style/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet" />
+    <link href="style/content/main.css" rel="stylesheet" />
+    <!--[if IE]>
+        <script>
+            document.createElement('header');
+            document.createElement('nav');
+            document.createElement('section');
+            document.createElement('article');
+            document.createElement('aside');
+            document.createElement('footer');
+        </script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container-fluid content px-0">
+        <nav class="navbar fixed-top headerNav justify-content-center align-items-center px-0">
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">главная</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">игра</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">танковедение</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">кланы</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">турниры</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">медиа</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">сообщества</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row mainContent">
+            <div class="col-xs-12 col-md-5 offset-md-3">
+                <h2 class="mainContent-header pl-2"><strong>Опыт танков</strong></h2>
+                <p class="pl-2 mainContent-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a arcu faucibus, ultricies elit ac, viverra metus. Aliquam molestie felis id consequat convallis. Donec sed nulla consectetur, ultricies sem ac, varius erat. Pellentesque vitae erat ut felis lacinia rhoncus eu in est.</p>
+            </div>
+            <div class="col-xs-12 col-md-5 offset-md-3">
+                <div class="mainContent-vidget d-flex flex-wrap ml-4">
+                    <div class="mainContent-vidget-tank">
+                        <div class="mainContent-vidget-tank-imgWrap"><img src="/images/experienceTank/tank.png" alt="tank" /></div>
+                        <p class="text-center text-uppercase">T-34</p>
+                        <div class="wlpTooltip tank1"></div>
+                    </div>
+                    <div class="mainContent-vidget-tank">
+                        <div class="mainContent-vidget-tank-imgWrap"><img src="/images/experienceTank/tank.png" alt="tank" /></div>
+                        <p class="text-center text-uppercase">T-34</p>
+                        <div class="wlpTooltip tank2"></div>
+                    </div>
+                    <div class="mainContent-vidget-tank">
+                        <div class="mainContent-vidget-tank-imgWrap"><img src="/images/experienceTank/tank.png" alt="tank" /></div>
+                        <p class="text-center text-uppercase">T-34</p>
+                        <div class="wlpTooltip tank3"></div>
+                    </div>
+                    <div class="mainContent-vidget-tank">
+                        <div class="mainContent-vidget-tank-imgWrap"><img src="/images/experienceTank/tank.png" alt="tank" /></div>
+                        <p class="text-center text-uppercase">T-34</p>
+                        <div class="wlpTooltip tank4"></div>
+                    </div>
+                    <div class="mainContent-vidget-tank">
+                        <div class="mainContent-vidget-tank-imgWrap"><img src="/images/experienceTank/tank.png" alt="tank" /></div>
+                        <p class="text-center text-uppercase">T-34</p>
+                        <div class="wlpTooltip tank5"></div>
+                    </div>
+                    <div class="mainContent-vidget-tank">
+                        <div class="mainContent-vidget-tank-imgWrap"><img src="/images/experienceTank/tank.png" alt="tank" /></div>
+                        <p class="text-center text-uppercase">T-34</p>
+                        <div class="wlpTooltip tank6"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="wlpTooltip tank" style="display:block!important;"><div>1</div></div>
+
+        </div>
+        <nav class="navbar fixed-bottom footer px-0 mb-0"><div class="col-xs-12"></div></nav>
+    </div>
+
+
+    <script id="ttcTmpl" type="text/x-jsrender">
+        <div class="tooltip-tank-calculator d-flex">
+            <div class="tank-equipment"><p class="tank-equipment-header font-weight-bold">Количество боёв</p></div>
+            <div class="tank-experience"><p class="tank-experience-header font-weight-bold">Опыт танка</p><div class="tank-experience-calcWraper"><img src="images/experienceTank/star.png" alt="Star" /><span class="tank-experience-value font-weight-bold">300</span></div></div>
+            <div class="tank-battleCount"><p class="tank-battleCount-header font-weight-bold">Количество боёв</p><div class="tank-battleCount-sliderWrap"><div class="tank-battleCount-slider slider{{:index}}"></div></div></div>
+            <div class="tank-experienceRes"></div>
+        </div>
+    </script>
+
+    <script type="text/javascript" src="scripts/wg.experienceCalculator.js"></script>
+    <script>
+        var tmpl = $.templates("#ttcTmpl");
+        
+        $(".wlpTooltip").each(function (index, value) {
+            var data = {index:index};
+            var html = tmpl.render(data);
+            $(value).html(html)
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            wg.expCalculator.init();
+
+            var tooltipContentArr = [$(".tooltip-tank1"), $(".tooltip-tank2"), $(".tooltip-tank3"), $(".tooltip-tank4"), $(".tooltip-tank5"), $(".tooltip-tank6")];
+
+            $(".mainContent-vidget-tank").each(function (index, value) {
+                var position = {
+                    at: "left+90 bottom+155",
+                    my: "left",
+                    of: value,
+                    collision: "none"
+
+                };
+                switch (index) {
+                    case 0:
+                        position.at = "left bottom+100";
+                        break;
+                    case 1:
+                        position.at = "center-250 bottom+100";
+                        break;
+                    case 2:
+                        position.my = "right";
+                        position.at = "right bottom+100";
+                        break;
+                    case 3:
+                        position.at = "left top-150";
+                        break;
+                    case 4:
+                        position.at = "center-250 top-150";
+                        break;
+                    case 5:
+                        position.my = "right";
+                        position.at = "right top-150";
+                        break;
+                    default:
+                        position.at = "center-250 bottom+100";
+                        break;
+                }
+                $(".wlpTooltip.tank" + (index + 1)).position(position);
+                $(".slider6").slider({
+                    range: 'min',
+                    change: function (event, ui) {
+                        var val = $(".slider6").slider("option", "value");
+                       console.log(val);
+                    }
+                });
+                $(value).hover(function (e) {
+                    $(".wlpTooltip.tank" + (index + 1), $(this)).fadeIn("fast");
+                }, function (e) { $(".wlpTooltip.tank" + (index + 1), $(this)).fadeOut("fast"); });
+
+
+                var contentTooltip = $(".wlpTooltip.tank" + (index + 1)).html();
+            })
+        })
+    </script>
+
+</body>
+</html>
