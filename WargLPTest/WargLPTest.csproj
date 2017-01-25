@@ -69,6 +69,7 @@
     <Content Include="fonts\Roboto-Bold.svg" />
     <Content Include="images\experienceTank\arrow_bottom.png" />
     <Content Include="images\experienceTank\arrow_top.png" />
+    <Content Include="images\experienceTank\expTankBackgroundRes.png" />
     <Content Include="images\experienceTank\sliderBg.png" />
     <Content Include="images\experienceTank\sliderTogle.png" />
     <Content Include="images\experienceTank\star.png" />
@@ -94,6 +95,7 @@
     <Content Include="scripts\jqueryUi\jquery-ui.js" />
     <Content Include="scripts\jqueryUi\jquery-ui.min.js" />
     <Content Include="scripts\jsRender\jsrender.js" />
+    <Content Include="scripts\tether\tether.js" />
     <Content Include="scripts\wg.experienceCalculator.js" />
     <Content Include="style\bootstrap\bootstrap-grid.css.map" />
     <Content Include="style\bootstrap\bootstrap-grid.min.css.map" />
@@ -141,6 +143,14 @@
     <Content Include="style\jqueryui\jquery-ui.theme.css" />
     <Content Include="style\jqueryui\jquery-ui.theme.min.css" />
     <Content Include="style\nav\headerNav.css" />
+    <Content Include="style\tether\tether-theme-arrows-dark.css" />
+    <Content Include="style\tether\tether-theme-arrows-dark.min.css" />
+    <Content Include="style\tether\tether-theme-arrows.css" />
+    <Content Include="style\tether\tether-theme-arrows.min.css" />
+    <Content Include="style\tether\tether-theme-basic.css" />
+    <Content Include="style\tether\tether-theme-basic.min.css" />
+    <Content Include="style\tether\tether.css" />
+    <Content Include="style\tether\tether.min.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
