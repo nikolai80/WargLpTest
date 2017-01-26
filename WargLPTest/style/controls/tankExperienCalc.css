@@ -40,6 +40,16 @@
         background: rgb(255,189,1);
     }
 
+.tank-equipment {
+    width: 100%;
+    flex-shrink: 1;
+}
+
+.tank-experience {
+    width: 100%;
+    flex-shrink: 2;
+}
+
 .tank-experience-calcWraper img {
     width: 61px;
     height: 43px;
@@ -52,9 +62,11 @@
 
 .tank-experienceRes-value-wrapper {
     background: url("../../images/experienceTank/expTankBackgroundRes.png") no-repeat;
-    width:102px;
-    height:42px;
+    width: 102px;
+    height: 42px;
 }
-.tank-experienceRes-value{font-size:30px;
-color:rgb(249,169,54);
+
+.tank-experienceRes-value {
+    font-size: 30px;
+    color: rgb(249,169,54);
 }

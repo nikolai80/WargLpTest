@@ -4,8 +4,10 @@
 @import "../content/mainContentVidget.css";
 @import "../controls/tooltipTank.css";
 @import "../controls/tankExperienCalc.css";
+
 @font-face {
-    font-family:"Roboto Bold";
-            src:url("../../fonts/Roboto-Bold.eot?") format("eot"),url("../../fonts/Roboto-Bold.woff") format("woff"),url("../../fonts/Roboto-Bold.ttf") format("truetype"),url("../../fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
-            font-weight:normal;
-            font-style:normal;}
+    font-family: "Roboto Bold";
+    src: url("../../fonts/Roboto-Bold.eot?") format("eot"),url("../../fonts/Roboto-Bold.woff") format("woff"),url("../../fonts/Roboto-Bold.ttf") format("truetype"),url("../../fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
