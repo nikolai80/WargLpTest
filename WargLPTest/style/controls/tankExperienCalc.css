@@ -60,13 +60,17 @@
     font-size: 30px;
 }
 
-.tank-experienceRes-value-wrapper {
+.tank-battleCountRes-value-wrapper {
     background: url("../../images/experienceTank/expTankBackgroundRes.png") no-repeat;
     width: 102px;
     height: 42px;
 }
 
-.tank-experienceRes-value {
+.tank-battleCountRes-value {
     font-size: 30px;
     color: rgb(249,169,54);
+	width: 102px;
+    height: 42px;
+	border:none;
+	background: transparent;
 }
