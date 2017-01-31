@@ -57,49 +57,46 @@
             </div>
         </nav>
 
-        <div class="row mainContent justify-content-center">
-            <div class="col-xs-12 col-lg-6">
+        <div class="row mainContent">
+            <div class="col-xs-12 col-md-5 offset-md-3">
                 <h2 class="mainContent-header pl-2"><strong>Опыт танков</strong></h2>
                 <p class="pl-2 mainContent-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a arcu faucibus, ultricies elit ac, viverra metus. Aliquam molestie felis id consequat convallis. Donec sed nulla consectetur, ultricies sem ac, varius erat. Pellentesque vitae erat ut felis lacinia rhoncus eu in est.</p>
             </div>
-            <div class="w-100"></div>
-            <div class="col-xs-12 col-lg-6 ">
-                <div class="mainContent-vidget d-flex flex-wrap flex-column flex-md-row ml-4">
-                    <div class="mainContent-vidget-tank" data-index="0">
-                        <div class="mainContent-vidget-tank-imgWrap"><img class="mainContent-vidget-tank-img" src="/images/experienceTank/tank.png" alt="tank" /></div>
+            <div class="col-xs-12 col-md-5 offset-md-3">
+                <div class="mainContent-vidget d-flex flex-wrap ml-4">
+                    <div class="mainContent-vidget-tank">
+                        <div class="mainContent-vidget-tank-imgWrap"><img src="/images/experienceTank/tank.png" alt="tank" /></div>
                         <p class="text-center text-uppercase">T-34</p>
                         <div class="wlpTooltip tank1"></div>
                     </div>
-                    <div class="mainContent-vidget-tank" data-index="1">
-                        <div class="mainContent-vidget-tank-imgWrap"><img class="mainContent-vidget-tank-img" src="/images/experienceTank/tank.png" alt="tank" /></div>
+                    <div class="mainContent-vidget-tank">
+                        <div class="mainContent-vidget-tank-imgWrap"><img src="/images/experienceTank/tank.png" alt="tank" /></div>
                         <p class="text-center text-uppercase">T-34</p>
                         <div class="wlpTooltip tank2"></div>
                     </div>
-                    <div class="mainContent-vidget-tank" data-index="2">
-                        <div class="mainContent-vidget-tank-imgWrap"><img class="mainContent-vidget-tank-img" src="/images/experienceTank/tank.png" alt="tank" /></div>
+                    <div class="mainContent-vidget-tank">
+                        <div class="mainContent-vidget-tank-imgWrap"><img src="/images/experienceTank/tank.png" alt="tank" /></div>
                         <p class="text-center text-uppercase">T-34</p>
                         <div class="wlpTooltip tank3"></div>
                     </div>
-                    <div class="mainContent-vidget-tank" data-index="3">
-                        <div class="mainContent-vidget-tank-imgWrap"><img class="mainContent-vidget-tank-img" src="/images/experienceTank/tank.png" alt="tank" /></div>
+                    <div class="mainContent-vidget-tank">
+                        <div class="mainContent-vidget-tank-imgWrap"><img src="/images/experienceTank/tank.png" alt="tank" /></div>
                         <p class="text-center text-uppercase">T-34</p>
                         <div class="wlpTooltip tank4"></div>
                     </div>
-                    <div class="mainContent-vidget-tank" data-index="4">
-                        <div class="mainContent-vidget-tank-imgWrap"><img class="mainContent-vidget-tank-img" src="/images/experienceTank/tank.png" alt="tank" /></div>
+                    <div class="mainContent-vidget-tank">
+                        <div class="mainContent-vidget-tank-imgWrap"><img src="/images/experienceTank/tank.png" alt="tank" /></div>
                         <p class="text-center text-uppercase">T-34</p>
                         <div class="wlpTooltip tank5"></div>
                     </div>
-                    <div class="mainContent-vidget-tank" data-index="5">
-                        <div class="mainContent-vidget-tank-imgWrap"><img class="mainContent-vidget-tank-img" src="/images/experienceTank/tank.png" alt="tank" /></div>
+                    <div class="mainContent-vidget-tank">
+                        <div class="mainContent-vidget-tank-imgWrap"><img src="/images/experienceTank/tank.png" alt="tank" /></div>
                         <p class="text-center text-uppercase">T-34</p>
                         <div class="wlpTooltip tank6"></div>
                     </div>
                 </div>
             </div>
-
-
-            <!--<div class="wlpTooltip tank4" style="display:block!important;"><div>тестовый блок</div></div>-->
+            <div class="wlpTooltip tank" style="display:block!important;"><div>1</div></div>
 
         </div>
         <nav class="navbar fixed-bottom footer px-0 mb-0"><div class="col-xs-12"></div></nav>
@@ -110,162 +107,101 @@
         <div class="tooltip-tank-calculator d-flex px-4 py-4 flex-column">
             <div class="d-flex flex-row justify-content-between">
                 <div class="tank-equipment">
-                    <p class="tank-equipment-header font-weight-bold">Комплектация</p>
-                    <div class="">
-                        <label class="">
-                            <input class="" type="radio" name="radEquipment" id="standardEquipment" value="1" checked>
+                    <p class="tank-equipment-header font-weight-bold">Комплектация</p><div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="radEquipment" id="standardEquipment" value="1" checked="">
                             Стандартная
                         </label>
                     </div>
-                    <div class="">
-                        <label class="">
-                            <input class="" type="radio" name="radEquipment" id="elitEquipment" value="2">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="radEquipment" id="elitEquipment" value="2">
                             Элитная
                         </label>
                     </div>
-                    <div class="">
-                        <label class="">
-                            <input class="" type="radio" name="radEquipment" id="premiumEquipment" value="3">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="radEquipment" id="premiumEquipment" value="3">
                             Премиумная
                         </label>
                     </div>
                 </div>
-                <div class="tank-experience"><p class="tank-experience-header font-weight-bold text-center">Опыт танка</p><div class="tank-experience-calcWraper  d-flex justify-content-between"><img src="images/experienceTank/star.png" alt="Star" /><span class="tank-experience-value font-weight-bold">{{:experienceVal}}</span></div></div>
+                <div class="tank-experience"><p class="tank-experience-header font-weight-bold text-center">Опыт танка</p><div class="tank-experience-calcWraper  d-flex justify-content-between"><img src="images/experienceTank/star.png" alt="Star" /><span class="tank-experience-value font-weight-bold">300</span></div></div>
             </div>
             <div class="d-flex flex-row justify-content-between">
-                <div class="tank-battleCount"><p class="tank-battleCount-header font-weight-bold">Количество боёв</p><div class="tank-battleCount-sliderWrap"><div class="tank-battleCount-slider slider"></div></div></div>
-                <div class="tank-battleCountRes align-self-end"><div class="tank-battleCountRes-value-wrapper mt-4"><input type="number" class="tank-battleCountRes-value text-center"></div></div>
+                <div class="tank-battleCount"><p class="tank-battleCount-header font-weight-bold">Количество боёв</p><div class="tank-battleCount-sliderWrap"><div class="tank-battleCount-slider slider{{:index}}"></div></div></div>
+                <div class="tank-experienceRes align-self-end"><div class="tank-experienceRes-value-wrapper mt-4"><p class="tank-experienceRes-value text-center">{{:experienceVal}}</p></div></div>
             </div>
         </div>
     </script>
 
     <script type="text/javascript" src="scripts/wg.experienceCalculator.js"></script>
+    <script>
+        var tmpl = $.templates("#ttcTmpl");
 
+        $(".wlpTooltip").each(function (index, value) {
+            var data = {
+                index: index,
+                experienceVal:100
+            };
+            var html = tmpl.render(data);
+            $(value).html(html)
+        });
+    </script>
     <script type="text/javascript">
         $(function () {
+            wg.expCalculator.init();
+
             var tooltipContentArr = [$(".tooltip-tank1"), $(".tooltip-tank2"), $(".tooltip-tank3"), $(".tooltip-tank4"), $(".tooltip-tank5"), $(".tooltip-tank6")];
-            var tmpl = $.templates("#ttcTmpl");
-
-            var loadTempl = function ($container, index) {
-                $($container).html();
-                var data = getData($container);
-                var html = tmpl.render(data);
-                $($container).html(html);
-
-                $("input.form-check-input[value=1]", $container).prop("checked", true);
-                $(".slider", $container).slider({
-                    value: data.battleCount,
-                    min: 0,
-                    max: 300,
-                    step: 1,
-                    range: 'min'
-                });
-                $(".tank-battleCountRes-value", $container).val($(".slider", $container).slider("option", "value"));
-            };//end load template
-
-            var setPositionTooltip = function ($parentContainer, index) {
-                var pos = $parentContainer.position();
-                var parentWidth = $parentContainer.outerWidth();
-                var parentHeight = $parentContainer.outerHeight();
-                var $tooltip = $parentContainer.find(".wlpTooltip");
-                var tooltipWidth = $tooltip.outerWidth();
-                var windowWidth = $(window).width();
-                console.log("window resolution", windowWidth);
-                if (windowWidth < 1349) {
-
-                    $tooltip.css({
-                        'top': (pos.top + parentHeight - 50) + "px",
-                        'left': (pos.left + parentWidth / 2 - 50) + "px"
-                    });
-                } else {
-                    switch (index) {
-                        case 0:
-                            $tooltip.css({
-                                'top': (pos.top + parentHeight - 50) + "px",
-                                'left': (pos.left + parentWidth / 2 - 50) + "px"
-                            });
-                            break;
-                        case 1:
-                            $tooltip.css({
-                                'top': (pos.top + parentHeight - 50) + "px",
-                                'left': (pos.left - tooltipWidth / 2 + parentWidth / 2) + "px"
-                            });
-                            break;
-                        case 2:
-                            $tooltip.css({
-                                'top': (pos.top + parentHeight - 50) + "px",
-                                'left': (pos.left - tooltipWidth + 160) + "px"
-                            });
-                            break;
-                        case 3:
-                            $tooltip.css({
-                                'top': (pos.top - parentHeight) + "px",
-                                'left': (pos.left + parentWidth / 2 - 50) + "px"
-                            });
-                            break;
-                        case 4:
-                            $tooltip.css({
-                                'top': (pos.top - parentHeight) + "px",
-                                'left': (pos.left - tooltipWidth / 2 + parentWidth / 2) + "px"
-                            });
-                            break;
-                        case 5:
-                            $tooltip.css({
-                                'top': (pos.top - parentHeight) + "px",
-                                'left': (pos.left - tooltipWidth + 160) + "px"
-                            });
-                            break;
-                    }
-                }
-            };// end SetPositionTooltip
-
-            var getData = function ($container) {
-                var equipment = parseInt($("input[name=radEquipment]:checked", $container).val()) || 1;
-                var battleCount = parseInt($(".tank-battleCountRes-value", $container).val()) || 100;
-                var experience = wg.expCalculator.expirienceCalc(equipment, battleCount);
-                var data = {
-                    equipment: equipment,
-                    battleCount: battleCount,
-                    experienceVal: experience
-                };
-                return data;
-            }
-
-            var recalcData = function ($container) {
-                var equipment = parseInt($("input[name=radEquipment]:checked", $container).val());
-                var battleCount = parseInt($(".tank-battleCountRes-value", $container).val());
-                var experience = wg.expCalculator.expirienceCalc(equipment, battleCount);
-                $(".tank-experience-value", $container).text(experience);
-                console.log("recalc data");
-
-            };
-            $(document).on("change", "input[name='radEquipment']", function (e) {
-                e.preventdefault;
-                var $container = $(this).closest(".wlpTooltip");
-                $(this).prop("checked", true);
-                recalcData($container);
-            });
-            
-            
 
             $(".mainContent-vidget-tank").each(function (index, value) {
-                var $container = $(".wlpTooltip.tank" + (index + 1), $(this));
-                loadTempl($container, index);
-                setPositionTooltip($container.parent(), index);
-            });//end main content vidget each
+                var position = {
+                    at: "left+90 bottom+155",
+                    my: "left",
+                    of: value,
+                    collision: "none"
 
-            $(".mainContent-vidget-tank").hover(function (e) {
-                $(this).find(".wlpTooltip").fadeIn("fast");
-            }, function (e) {
-                $(this).find(".wlpTooltip").fadeOut("fast");
-            });//end hover tank
+                };
+                switch (index) {
+                    case 0:
+                        position.at = "left bottom+100";
+                        break;
+                    case 1:
+                        position.at = "center-250 bottom+100";
+                        break;
+                    case 2:
+                        position.my = "right";
+                        position.at = "right bottom+100";
+                        break;
+                    case 3:
+                        position.at = "left top-150";
+                        break;
+                    case 4:
+                        position.at = "center-250 top-150";
+                        break;
+                    case 5:
+                        position.my = "right";
+                        position.at = "right top-150";
+                        break;
+                    default:
+                        position.at = "center-250 bottom+100";
+                        break;
+                }
+                $(".wlpTooltip.tank" + (index + 1)).position(position);
+                $(".slider6").slider({
+                    range: 'min',
+                    change: function (event, ui) {
+                        var val = $(".slider6").slider("option", "value");
+                        console.log(val);
+                    }
+                });
+                $(value).hover(function (e) {
+                    $(".wlpTooltip.tank" + (index + 1), $(this)).fadeIn("fast");
+                }, function (e) { $(".wlpTooltip.tank" + (index + 1), $(this)).fadeOut("fast"); });
 
-            $(".slider").on("slidechange", function (event, ui) {
-                var $container = $(this).closest(".wlpTooltip");
-                $(".tank-battleCountRes-value", $container).val($(".slider", $container).slider("option", "value"));
-                recalcData($container);
-            });
-           
+
+                var contentTooltip = $(".wlpTooltip.tank" + (index + 1)).html();
+            })
         })
     </script>
 
