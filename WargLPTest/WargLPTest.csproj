@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\Roboto-Bold.svg" />
+    <Content Include="images\Categories.png" />
     <Content Include="images\experienceTank\arrow_bottom.png" />
     <Content Include="images\experienceTank\arrow_top.png" />
     <Content Include="images\experienceTank\expTankBackgroundRes.png" />
@@ -82,6 +83,7 @@
     <Content Include="images\experienceTank\tooltipBackground-topRight.png" />
     <Content Include="images\footer.png" />
     <Content Include="images\Landging.png" />
+    <Content Include="images\Site logo.png" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="scripts\ionRangeSlider\ion.rangeSlider.js" />

@@ -1,28 +1,41 @@
-﻿.mainContent-vidget-tank {
-	/*background: url("/images/experienceTank/tank.png") no-repeat 50% 100%;*/
-	width: 196px;
-	height: 291px;
-	overflow: hidden;
-	margin: 5px 0 0 11px;
-	border:1px dashed red;
-	/*background-size: 160%;*/
+﻿.mainContent-vidget {
+    max-width: 700px;
+}
+
+.mainContent-vidget-tank {
+    /*background: url("/images/experienceTank/tank.png") no-repeat 50% 100%;*/
+    width: 196px;
+    height: 291px;
+    overflow: hidden;
+    margin: 5px 0 0 11px;
+    border: 1px dashed red;
+    /*background-size: 160%;*/
 }
 
 .mainContent-vidget-tank-imgWrap {
-	max-height: 170px;
-	max-width: 225px;
-	overflow: hidden;
-	margin-bottom:20px;
+    max-height: 170px;
+    max-width: 225px;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .mainContent-vidget-tank .mainContent-vidget-tank-img {
-	margin-left: -79px;
-	margin-top: -28px;
-	width: 351px;
+    margin-left: -79px;
+    margin-top: -28px;
+    width: 351px;
 }
 
 .mainContent-vidget-tank p {
-	font-family:Arial;
-	font-size: 21px;
-	color: rgb(185,185,185);
+    font-family: Arial;
+    font-size: 21px;
+    color: rgb(185,185,185);
+}
+
+@media(max-width:720px) {
+    .mainContent-vidget-tank {
+        -webkit-align-self: center !important;
+        -ms-flex-item-align: center !important;
+        -ms-grid-row-align: center !important;
+        align-self: center !important;
+    }
 }

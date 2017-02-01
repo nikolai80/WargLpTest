@@ -1,4 +1,12 @@
-﻿.tank-battleCount-header, .tank-equipment-header, .tank-experience-header {
+﻿input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number]:focus{
+outline-color:rgb(249,169,54);
+}
+.tank-battleCount-header, .tank-equipment-header, .tank-experience-header {
     font-family: Arial;
     font-size: 21px;
     color: rgb(162,155,112);

@@ -1,8 +1,14 @@
 ﻿body {
-	background: rgb(28,28,30) url("../../images/Landging.png") no-repeat;
+	background: rgb(28,28,30) url("../../images/Landging.png") no-repeat 50% 0%;
 }
 
-.content {
+.navbar-toggler-icon{ 
+    border-bottom: 17px double white; 
+    border-top: 6px solid white; 
+    content:"";
+    height: 5px; 
+    width:30px;
+	padding-top:5px;
 }
 
 .mainContent {
@@ -10,12 +16,21 @@
 	margin-top: 282px;
     margin-bottom:100px;
 }
+.navbar-brand img{width:2em;}
 
 .footer {
 	height: 83px;
-	background: rgb(57,61,63) url("../../images/footer.png");
+	background: rgb(57,61,63) url("../../images/footer.png") 50% 0%;
 }
 .mainContent-header{margin-bottom:40px;
 					font-size:35px;
 }
 .mainContent-text{line-height:18px;}
+@media(max-width:1150px){
+body {
+	background: rgb(28,28,30);
+}
+.mainContent {
+	margin-top: 66px;
+}
+}
