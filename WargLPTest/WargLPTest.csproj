@@ -81,9 +81,11 @@
     <Content Include="images\experienceTank\tooltipBackground-topCenter.png" />
     <Content Include="images\experienceTank\tooltipBackground-topLeft.png" />
     <Content Include="images\experienceTank\tooltipBackground-topRight.png" />
+    <Content Include="images\experienceTank\toolTipBgMobi.png" />
     <Content Include="images\footer.png" />
     <Content Include="images\Landging.png" />
     <Content Include="images\Site logo.png" />
+    <Content Include="images\wg-logo.png" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="scripts\ionRangeSlider\ion.rangeSlider.js" />

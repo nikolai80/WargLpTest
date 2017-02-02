@@ -6,7 +6,7 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number]:focus{
 outline-color:rgb(249,169,54);
 }
-.tank-battleCount-header, .tank-equipment-header, .tank-experience-header {
+.wlpTooltip .tank-battleCount-header, .wlpTooltip .tank-equipment-header, .wlpTooltip .tank-experience-header {
     font-family: Arial;
     font-size: 21px;
     color: rgb(162,155,112);
@@ -76,7 +76,7 @@ outline-color:rgb(249,169,54);
 
 .tank-battleCountRes-value {
     font-size: 30px;
-    color: rgb(249,169,54);
+    color: rgb(162,155,112);
 	width: 102px;
     height: 42px;
 	border:none;

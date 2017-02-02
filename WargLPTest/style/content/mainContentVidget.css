@@ -3,13 +3,10 @@
 }
 
 .mainContent-vidget-tank {
-    /*background: url("/images/experienceTank/tank.png") no-repeat 50% 100%;*/
     width: 196px;
     height: 291px;
     overflow: hidden;
     margin: 5px 0 0 11px;
-    border: 1px dashed red;
-    /*background-size: 160%;*/
 }
 
 .mainContent-vidget-tank-imgWrap {

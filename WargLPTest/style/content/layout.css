@@ -16,6 +16,9 @@
 	margin-top: 282px;
     margin-bottom:100px;
 }
+.categories{position:absolute;
+right:14em;
+}
 .navbar-brand img{width:2em;}
 
 .footer {
@@ -33,4 +36,20 @@ body {
 .mainContent {
 	margin-top: 66px;
 }
+}
+@media(max-width:425px){
+   .footer {
+	height: 160px;
+	background-image: none;
+    background-color:black;
+}
+
+.footer-logo img{width:112px;
+height:59px;
+}
+.footer-phones{color: rgb(185,185,185);}
+}
+@media(min-width:426px) {
+    .footer-content { display:none;
+    }
 }
